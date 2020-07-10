@@ -119,6 +119,11 @@ body {
 /* Герой */
 .hero {
   background-color: var(--titles-color);
+  padding-top: 200px;
+  padding-right: 252px;
+  padding-bottom: 200px;
+  padding-left: 252px;
+  margin-bottom: 94px;
 }
 .hero-title {
   font-weight: 900;
@@ -128,12 +133,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 .modal-btn {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
+  display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -142,6 +148,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  margin: auto;
 }
 
 /* Преимущества */
@@ -152,13 +159,21 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--titles-color);
+  margin-bottom: 10px;
 }
 .advantages-description {
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 94px;
 }
 
 /* Чем мы занимаемся */
+.advantages-list {
+  display: flex;
+}
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .title {
   font-weight: bold;
   font-size: 36px;
