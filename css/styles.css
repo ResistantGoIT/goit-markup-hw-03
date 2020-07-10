@@ -1,0 +1,210 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --accent-color: #2196f3;
+    --titles-color: #212121;
+    --description-color: #757575;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    background-color: #ffffff;
+    color: var(--description-color);
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+/* Шапка */
+.logo,
+.blue,
+.white {
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.logo {
+    color: #000000;
+}
+.white {
+    color: #ffffff;
+}
+
+.blue {
+    color: var(--accent-color);
+}
+.navigation-list-link,
+.header-mail,
+.header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--titles-color);
+}
+.header-mail,
+.header-tel {
+    font-family: var(--main-font);
+    font-style: normal;
+    color: var(--description-color);
+}
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus,
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.social-link:hover,
+.social-link:focus,
+.client-list-link:hover,
+.client-list-link:focus,
+.footer-social-link:hover,
+.footer-social-link:focus {
+    color: var(--accent-color);
+}
+
+/* Герой */
+.hero {
+    background-color: var(--titles-color);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.modal-btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+
+/* Преимущества */
+.advantages-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--titles-color);
+}
+.advantages-description {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--titles-color);
+}
+.subtitle,
+.footer-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.subtitle {
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+/* Наша команда */
+.team {
+    background-color: #f5f4fa;
+}
+.name {
+    font-weight: 500;
+    color: var(--titles-color);
+}
+.position {
+    color: var(--description-color);
+}
+.position,
+.name {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/* Подвал */
+.footer {
+    background-color: #2f303a;
+}
+.footer-address,
+.footer-mail,
+.footer-tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.footer-mail,
+.footer-tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-address {
+    color: #ffffff;
+}
+
+/* Портфолио */
+.filter-list-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--titles-color);
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    border: none;
+}
+.filter-list-btn:hover,
+.filter-list-btn:focus {
+    color: #ffffff;
+    background: var(--accent-color);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: none;
+}
+.filter-examples-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--titles-color);
+}
+.filter-examples-type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--description-color);
+}
+.filter-examples-link:hover,
+.filter-examples-link:focus {
+    background-color: rgba(33, 150, 243, 0.9);
+}
