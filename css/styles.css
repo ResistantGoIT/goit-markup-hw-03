@@ -39,6 +39,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.img-block {
+  display: block;
+}
 
 /* Шапка */
 .header .container {
@@ -109,8 +112,8 @@ body {
 .navigation-list-link:focus,
 .social-link:hover,
 .social-link:focus,
-.client-list-link:hover,
-.client-list-link:focus,
+.client:hover,
+.client:focus,
 .footer-social-link:hover,
 .footer-social-link:focus {
   color: var(--accent-color);
@@ -124,12 +127,12 @@ body {
   padding-bottom: 200px;
   padding-left: 252px;
   margin-bottom: 94px;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -166,13 +169,15 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 94px;
 }
-
-/* Чем мы занимаемся */
 .advantages-list {
   display: flex;
 }
 .advantages-list-item:not(:last-child) {
   margin-right: 30px;
+}
+/* Чем мы занимаемся */
+.occupation {
+  margin-bottom: 94px;
 }
 .title {
   font-weight: bold;
@@ -181,6 +186,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titles-color);
+  margin-bottom: 50px;
+}
+.occupation-list {
+  display: flex;
+}
+.occupation-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .subtitle,
 .footer-text {
@@ -199,13 +211,30 @@ body {
 /* Наша команда */
 .team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team .img-block {
+  margin-bottom: 30px;
+}
+.team-list {
+  display: flex;
+}
+.team-list-item {
+  background-color: #ffffff;
+  padding-bottom: 24px;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .name {
   font-weight: 500;
   color: var(--titles-color);
+  margin-bottom: 10px;
 }
 .position {
   color: var(--description-color);
+  margin-bottom: 16px;
 }
 .position,
 .name {
@@ -214,9 +243,51 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-/* Подвал */
+.team-list-links {
+  display: flex;
+  justify-content: center;
+}
+.social-list:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  padding: 12px;
+}
+
+/* Постоянные клиенты */
+.our-client .title {
+  padding-top: 94px;
+}
+.client {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.client-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-list-link {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Подвал*/
 .footer {
   background-color: #2f303a;
+}
+.footer .container {
+  display: flex;
+}
+.footer-add .logo {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
 }
 .footer-address,
 .footer-mail,
@@ -226,6 +297,9 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
 }
+.footer-mail {
+  margin-bottom: 9px;
+}
 .footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
@@ -233,8 +307,28 @@ body {
 .footer-address {
   color: #ffffff;
 }
+.footer-list-item {
+  margin-bottom: 9px;
+}
+.footer-add {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 69px;
+}
+.footer-com-on {
+  padding-top: 72px;
+}
 
 /* Портфолио */
+.filter-list {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-list-btn {
   font-weight: 500;
   font-size: 16px;
@@ -245,7 +339,13 @@ body {
   background-color: #f5f4fa;
   border-radius: 4px;
   border: none;
+  height: 38px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
 }
+
 .filter-list-btn:hover,
 .filter-list-btn:focus {
   color: #ffffff;
@@ -271,4 +371,21 @@ body {
 .filter-examples-link:hover,
 .filter-examples-link:focus {
   background-color: rgba(33, 150, 243, 0.9);
+}
+.filter-examples-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-examples-list-item {
+  width: 370px;
+  height: 404px;
+  background-color: #ffffff;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.filter-examples-list-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.filter-examples-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
